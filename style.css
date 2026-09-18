@@ -224,11 +224,19 @@ footer {
 
 /* --- RESPONSIVE MOBILE (max-width: 768px) --- */
 @media (max-width: 768px) {
-    .headerTop .tagline {
-        display: none;
-        /* Masque le slogan sur mobile */
+    .headerTop {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    position: relative;
+    justify-content: space-around;
+        
+        .tagline {
+            display: none;
+            /* Masque le slogan sur mobile */
+        }
+        
     }
-
     .burger-btn {
         display: block;
         /* Affiche le bouton burger */
