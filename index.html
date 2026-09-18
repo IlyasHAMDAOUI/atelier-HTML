@@ -12,85 +12,88 @@
 <body>
     <header>
         <section class="headerTop">
-            <img src="logo.png" alt="Logo" width="100px" height="auto">
-            <aside>Des objets du quotidien qui ont du sens</aside>
-            <nav>
+            <img src="logo.png" alt="Logo" class="logo">
+            <p class="tagline">Des objets du quotidien qui ont du sens</p>
+            <nav class="user-nav">
                 <ul class="ligneDroite">
-                    <!-- Normalement en SVG, payant passer sur un autre -->
-                    <!-- Icône de recherche -->
                     <li><a href="#recherche"><img src="loupe.png" alt="Recherche"></a></li>
-                    <!-- Icône de compte -->
                     <li><a href="#compte"><img src="la-personne (1).png" alt="compte"></a></li>
-                    <!-- Icône de panier -->
                     <li><a href="#panier"><img src="sac-de-courses.png" alt="panier"></a></li>
                 </ul>
             </nav>
+            
+            <!-- BOUTON BURGER (Masqué sur PC, visible sur Mobile) -->
+            <button class="burger-btn" id="burgerBtn" aria-label="Ouvrir le menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </section>
-        <section class="headerBottom">
+
+        <!-- MENU DE NAVIGATION (HeaderBottom) -->
+        <section class="headerBottom" id="headerBottom">
             <nav class="navigation">
                 <ul id="headerBottomNav">
                     <li><a href="#accueil">Accueil</a></li>
                     <li><a href="#collections">Collections</a></li>
-                    <li><a href="#a-propos">A propos</a></li>
+                    <li><a href="#a-propos">À propos</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </section>
     </header>
+
     <main>
         <section class="heroBanner">
-            <!-- <img src="herobanner.jpg" alt="image de bol" width="100%" height="auto"> -->
             <div>
-                <aside>NOTRE COLLECTION</aside>
+                <span class="subtitle">NOTRE COLLECTION</span>
                 <h1>Nos bols</h1>
-                <p>Des bols uniques, faconnés à la main dans notre atelier en France. Des pieces durables, pour un
-                    quotidien plus simple et plus beau.</p>
-                <button>Découvrir la collection</button>
+                <p>Des bols uniques, façonnés à la main dans notre atelier en France. Des pièces durables, pour un quotidien plus simple et plus beau.</p>
+                <button class="cta-btn">Découvrir la collection</button>
             </div>
         </section>
+
         <section class="products">
             <h2>Nos produits</h2>
             <div class="productGrid">
                 <article class="productCard">
-                    <img src="article1.png" alt="Image 1" , width="20%" height="auto">
+                    <img src="article1.png" alt="Bol en grès bleu">
                     <div>
                         <h3>Bol en grès bleu</h3>
                         <p>35 €</p>
-                        <button>Voir la collection</button>
-                        <!-- <a href="#collection-1">Voir la collection</a> -->
+                        <button class="cta-btn">Voir la collection</button>
                     </div>
                 </article>
                 <article class="productCard">
-                    <img src="article2.png" alt="Image 2" width="20%" height="auto">
+                    <img src="article2.png" alt="Bol en grès blanc">
                     <div>
                         <h3>Bol en grès blanc</h3>
                         <p>32 €</p>
-                        <button>Voir la collection</button>
-                    </div> <!-- <a href="#collection-2">Voir la collection</a> -->
+                        <button class="cta-btn">Voir la collection</button>
+                    </div>
                 </article>
                 <article class="productCard">
-                    <img src="article3.png" alt="Image 3 " width="20%" height="auto">
+                    <img src="article3.png" alt="Bol émaillé vert">
                     <div>
                         <h3>Bol émaillé vert</h3>
                         <p>38 €</p>
-                        <button>Voir la collection</button>
+                        <button class="cta-btn">Voir la collection</button>
                     </div>
-                    <!-- <a href="#collection-3">Voir la collection</a> -->
                 </article>
             </div>
         </section>
+
         <div class="livraison">
-            <img src="iconeCamion.png" alt="Icone camion" width="50px" height="auto">
+            <img src="iconeCamion.png" alt="Icone camion">
             <div>
                 <h4>Livraison offerte dès 60 €</h4>
                 <p>En France métropolitaine. Expédition sous 48 H.</p>
             </div>
         </div>
     </main>
+
     <footer>
         <div class="footerTop">
             <div>
-                <img src="logo.png" alt="Logo" width="100px" height="auto">
+                <img src="logo.png" alt="Logo" class="footer-logo">
             </div>
             <div class="navigation">
                 <h3>Navigation</h3>
@@ -98,7 +101,7 @@
                     <ul>
                         <li><a href="#accueil">Accueil</a></li>
                         <li><a href="#collections">Collections</a></li>
-                        <li><a href="#a-propos">A propos</a></li>
+                        <li><a href="#a-propos">À propos</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -107,10 +110,10 @@
                 <h3>Information</h3>
                 <nav>
                     <ul>
-                        <li><a href="">Livraison</a></li>
-                        <li><a href="">Retours</a></li>
-                        <li><a href="">Mentions légales</a></li>
-                        <li><a href="">Politique de confidentialité</a></li>
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">Retours</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
                     </ul>
                 </nav>
             </div>
@@ -118,19 +121,19 @@
                 <h3>Suivez-nous</h3>
                 <nav>
                     <ul class="ligneDroite">
-                        <li><a href=""><img src="instagram-logo.svg" alt="instagram"></a></li>
-                        <li><a href=""><img src="facebook-logo.svg" alt="facebook"></a></li>
-                        <li><a href=""><img src="pinterest-logo.svg" alt="pinterest"></a></li>
+                        <li><a href="#"><img src="instagram-logo.svg" alt="instagram"></a></li>
+                        <li><a href="#"><img src="facebook-logo.svg" alt="facebook"></a></li>
+                        <li><a href="#"><img src="pinterest-logo.svg" alt="pinterest"></a></li>
                     </ul>
                 </nav>
             </div>
         </div>
         <div class="footerBottom">
             <p>© 2024 Atelier Terres claires. Tous droits réservés.</p>
-            <p>Dess objets du quotidien qui ont du sens.</p>
+            <p>Des objets du quotidien qui ont du sens.</p>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
-
 </html>
