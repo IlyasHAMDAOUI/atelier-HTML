@@ -196,7 +196,6 @@ a {
                 svg {
                     width: 30px;
                 }
-
                 display: flex;
                 flex-flow: row nowrap;
                 /* width:; */
@@ -205,7 +204,6 @@ a {
             }
         }
     }
-
 }
 
 .iconeFicheProduit {
